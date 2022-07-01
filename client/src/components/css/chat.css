@@ -1,0 +1,116 @@
+.messanger {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+.chatMenu {
+    flex: 3.5;
+    /* background-color: blue; */
+    display: block;
+}
+
+.chatBox {
+    flex: 5.5;
+    /* background-color: blueviolet; */
+}
+
+.chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: absolute; */
+}
+
+.chatBoxTop {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.chatBoxBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding-right: 10px;
+    border: solid grey 1px;
+}
+
+.chatmessengerInput {
+    width: 80%;
+    height: 70px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    border: none !important;
+}
+
+.chatBoxSubmitButton {
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: teal;
+    color: white
+}
+
+.chatOnline {
+    flex: 3;
+    /* background-color: chartreuse; */
+    display: block
+}
+
+.sideBar-sm {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .chatOnline {
+        /* background-color: lightblue; */
+        display: none !important;
+    }
+    .sideBar-sm {
+        display: flex;
+        justify-content: space-between;
+    }
+    .chatMenu {
+        display: none;
+    }
+    .chatmessengerInput {
+        width: 80%;
+        height: 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .chatBoxSubmitButton {
+        margin-bottom: 10px;
+    }
+    .noCoversation {}
+}
+
+.chatMenuWrapper, .chatBoxWrapper, .chatOnlineWrapper {
+    padding: 10px;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.chatMenuInput {
+    border: none;
+    width: 90%;
+    border-bottom: 1px solid gray;
+    padding: 10px, 0px;
+}
+
+.noCoversation {
+    position: relative;
+    margin-top: 20%;
+    font-size: 50px;
+    letter-spacing: normal;
+    line-height:100px;
+    color: rgb(214, 212, 212);
+    text-align: center;
+    border: dotted red 1px !important;
+    width: 500px;
+   
+}
